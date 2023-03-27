@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<style>
+#sathe{
+margin-left:20px;
+font-size:25px;
+font-weight:700;
+}
+#inr{
+margin-left:420px;
+font-weight:550;
+}
+#lang{
+margin-left:30px;
+}
+#list{
+margin-left:30px;
+}
+#cus{
+margin-left:30px;
+}
+#register{
+margin-left:30px;
+}
+#sign{
+margin-left:30px;
+}
+header{
+padding:10px;
+border:1px solid black;
+background-color:black;
+text-color:white;
+}
+ul{
+padding:5px;
+margin-top:20px;
+}
+a{
+text-decoration:none;
+font-size:16px;
+color:white;
+}
+a:hover{
+padding:5px;
+
+text-decoration:none;
+color:white;
+}
+.btn{
+height:40px;
+color:#003399;
+}
+#sat{
+background-color:#003399;
+color:white;
+border:1px solid black;
+font-size:17px;
+}
+.bg-image{
+    background-image: url("https://i.content4travel.com/cms/img/u/desktop/se/hrgsunf_5.jpg?version=1");
+    height: 500px;
+	background-repeat:no-repeat;
+	background-size:100%;
+	font-size:40px;
+	color:white;
+	font-width:900;
+}
+.pad{
+margin-left:50px;
+ font-family: 'Advent Pro';
+  font-size: 50px;
+}
+.padd{
+margin-left:50px;
+ font-family: 'Advent Pro';
+   font-size: 50px;
+}
+.search{
+margin-left:50px;
+ font-family: 'Dekko';font-size: 35px;
+}
+#tag{
+ font-family: 'Advent Pro';
+   font-size: 30px;
+}
+li{
+font-size:25px;
+}
+#shadow{
+width:200px;
+border:1px solid black;
+box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+padding:5px;
+display:flex;
+}
+#yas{
+border:1px solid black;
+box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+padding:5px;
+color:white;
+background-color:black;
+}
+.container3{
+text-align:center;
+background-color:#003399;
+padding:10px;
+color:white;
+ font-family: 'Dekko';
+ margin:0px;
+}
+footer{
+background-color:black;
+padding:10px;
+color:white;
+ font-family: 'Dekko';
+  margin:0px;
+}
+</style>
+</head>
+<body>
+<header class="my-10 py-10">
+<nav align="justified">
+		<a href="#" id="sathe">Hotel.com</a>
+			<a href="#"id="inr"><abbr title="select your currency"> INR</abbr></a>
+				<a href="#"id="lang"><abbr title="Select your language"><img src="https://th.bing.com/th?id=OIP.GjPfDoP7dYs_BUd5W9w97gHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" class="img-thumbnail"width="40px"height="40px" /></abbr></a>
+						<a href="#"id="cus"><abbr title="customer service help"><i class="fa fa-user"></i></abbr></a>
+			<a href="#"id="list">list your propertiess </a>
+				<a href="#"id="register"><button type="button"class="btn btn-light text-right">register</button> </a>
+				<a href="#"id="sign"><button type="button" class="btn btn-light text-right">sign in</button></a>
+</nav>
+<ul class="list-inline container-fluid">
+<li class="list-inline-item">
+<a href="#" id="sa"><button  id="sat"class="btn"><i class="fa fa-bed" ></i> stays  </button></a>
+</li>
+<li class="list-inline-item">
+<a href="#" id=""><i class="fa fa-plane"></i>  flights  </a>
+</li>
+<li class="list-inline-item">
+<a href="#" id=""></i> flight+hotels</a>
+</li>
+<li class="list-inline-item">
+<a href="#" id=""><i class="fa fa-car"></i> car rentals  </a>
+</li>
+<li class="list-inline-item">
+<a href="#" id="">attractions  </a>
+</li>
+<li class="list-inline-item">
+<a href="#" id=""><i class="fa fa-taxi"></i> airport taxis  </a>
+</li>
+</ul>
+</header>		
+<main class="container2">
+<div   class="bg-image"class="container">
+<br/><span class="pad">Find your kind of </span><br/>
+                                         <span class="padd">  holiday rental</span></br>
+                             <span class="search">Search low prices on hotels ......</span> 
+</br>	</br>	</br>	
+<div class="d-flex p-3  text-white justify-content-between bg-dark py-0 my-0 container-fluid">  
+    <div class="p-2 col-3 bg-light btn btn-sm "data-toggle="collapse"data-target="#value">
+	<p class="lead"><input type="text"value="Where are you going"style="height:30px; width:250px; ">
+	</div>
+    <div class="p-2  col-3 bg-light btn btn-sm"data-toggle="collapse"data-target="#value">
+check in-date --check-out date
+	</div>
+    <div class="p-2 col-3 bg-light btn btn-sm"data-toggle="collapse"data-target="#value">
+2 adults 0.children 1.room
+	</div>
+	   <div class="p-2  col-2 bg-primary text-light btn btn-sm"data-toggle="collapse"data-target="#value">
+Search
+	   </div>
+	   </p>
+  </div>
+  <div id="value"class="collapse container"><p class="lead text-secondary bg-light"style="margin-left:200px">No data found.......</p>
+  </div>
+</div>						 
+</main>
+<div class="container-fluid">
+<p  id="tag" class="lead ">Offers</p>
+<p class="lead">Why are you waiting immediately book the rooms and enjoy the trip</p>
+<div class="container-fluid my-5">
+<p class="lead">promotions and deals special for you</p>
+<div class="row text-center py-5 d-flex flex-nowrap overflow-auto">
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100" >
+<img src="https://th.bing.com/th/id/R.d3c041db161a6fea51fc2b7cf05eaeef?rik=XIYVe0rMqAorPA&riu=http%3a%2f%2fwww.qifenglogistics.com%2fImages%2fs2.png&ehk=qsjfaeZ2juOEE3qTtMCaVAdFYERFV4ciWMkBkSJaTsU%3d&risl=&pid=ImgRaw&r=0" width="450px"height="200px" />
+<div class="card-img-overlay">
+<h4 class="text-light"style=" font-family: 'Advent Pro';">Fly away to your dream holiday</h4>
+<h5 class="text-light"style=" font-family: 'Advent Pro';">Get inspired, compare and book flights with more flexibility</h5><br/>
+<button type="button"class="btn btn-primary text-light">search for flights</button>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100" >
+<img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?cs=srgb&dl=vacation-water-blue-189296.jpg&fm=jpg" width="450px"height="200px" />
+<div class="card-img-overlay">
+<h4 class="text-light"style=" font-family: 'Advent Pro';">Escape for while</h4>
+<h5 class="text-light"style=" font-family: 'Advent Pro';">Enjoy the freedom of monthly stay on booking.com</h5><br/>
+<button type="button"class="btn btn-primary text-light">Discover monthly stays</button>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-4">
+<div class="card-shadow h-100" >
+<img src="https://th.bing.com/th/id/R.2bce6af9edaeed13162661665fcd2cdd?rik=zfw4bNtNBOLONA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fxiTzzuH.jpg&ehk=yLh3p3gLrcJTXWfCAKKuqlbGwZZdb8PxcIVzYqkoPxY%3d&risl=&pid=ImgRaw&r=0"width="450px"height="200px" />
+<div class="card-img-overlay">
+<h4 class="text-light"style=" font-family: 'Advent Pro';">New Year Adventures</h4>
+<h5 class="text-light"style=" font-family: 'Advent Pro';">Save 15% or more when you book and stay before 31 june 2023</h5><br/>
+<button type="button"class="btn btn-primary text-light">Find early 2023 deals</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid"id="tag">
+Filters on Singapore 
+<div id="yas">
+<div class="row container-fluid ">
+<ul class="nav flex-column col-2"id="shadow">
+<li class="nav-item">
+<form>
+<p class="lead">Price</p>
+ <p class="lead"> <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">20000-30000Rs </label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> 30000-50000Rs</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> 50000-100000Rs</label></br>
+  <input type="checkbox" id="vehicle3" name="vehicle5" value="Boat">
+  <label for="vehicle5"> above 100000Rs</label></p>
+</form>
+</li>
+<li class="nav-item">
+<p class="lead">Star ratings</p>
+<form>
+ <p class="lead"> <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> <span class="badge badge-danger">4.5+</span></label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"><span class="badge badge-danger">3.5+</span> </label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> <span class="badge badge-danger">3.0+</span></label></p>
+</form>
+</li>
+</ul>
+<div class="col-7"><br/>
+<img src="https://wallpapercave.com/wp/wp1846091.jpg"width="100%"height="400px" />
+</div>
+<div class="col-3"></br>
+<h2 class="lead">M Social Singapore</h2>
+<p class="lead"style=" font-family: 'Advent Pro';">Robertson Quay, SingaporeShow on map1.7 km from centre</p>
+<p class="lead"style=" font-family: 'Advent Pro';">Travel Sustainable property</p>
+ <p class="lead"style=" font-family: 'Advent Pro';">Nestled in the heart of vibrant Robertson Quay along the iconic Singapore River, M Social Singapore offers accommodation away from the hustle and bustle of the city.</p>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<p style="font-width:600; font-family: 'Advent Pro';font-size:30px;">Quick and easy trip planner</p>
+<p class="lead">Pick a wibe and explore the top destination in india</p>
+<div class="container-fluid">
+<ul class="list-inline">
+<li class="list-inline-item"><button class="btn"type="button"data-toggle="collapse"data-target="#value"> <i class="fa fa-building"data-parent="#accordion">City</i></button></li>
+<li class="list-inline-item"><button class="btn"type="button"data-toggle="collapse"data-target="#valu"> <i class="fa fa-heart"data-parent="#accordion">Romance</i></button></li>
+<li class="list-inline-item"><button class="btn"type="button"data-toggle="collapse"data-target="#val"> <i class="fa fa-bicycle"data-parent="#accordion">Outdoors</i></button></li>
+<li class="list-inline-item"><button class="btn"type="button"data-toggle="collapse"data-target="#udupi"> <i class="fa fa-umbrella"data-parent="#accordion">Beach</i></button></li>
+</ul>
+<div class="collapse row   d-flex flex-nowrap overflow-auto text-center py-5 my-5"id="value"style="margin:5px;">
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://th.bing.com/th/id/OIP.U9D4A0AFl_n9EjqU0__Y7gHaE-?pid=ImgDet&rs=1" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Vellore</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 100km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://th.bing.com/th/id/R.1f500a76973569ae908fc0a0c429ff9c?rik=lRsfJ3no3n2ReQ&riu=http%3a%2f%2finspirationseek.com%2fwp-content%2fuploads%2f2014%2f12%2fChennai-Hotel-India.jpg&ehk=hhFbKpfBFWlsrJF0qAwmQoVtuv7H3mns5bdoQ6ziouc%3d&risl=&pid=ImgRaw&r=0" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Chennai</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 150km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://c2.staticflickr.com/8/7341/10734169204_c410d4f7f6_b.jpg" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Thiruvannamalai</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 190km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://preview.redd.it/iyhygkj6h8931.jpg?auto=webp&s=36b8cfc7daba4c1e53c1dd9f0fa2f21d4c84cbc5" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Banglore</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 240km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://pix10.agoda.net/geo/city/88777/1_88777_02.jpg?s=1920x822" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">vijayawada</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 430km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://www.indiaimagine.com/wp-content/uploads/2020/10/Shimoga-Cover.jpg" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Shimoga</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 545km away</p>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse row  flex-nowrap overflow-auto text-center py-5 my-5"id="valu"style="margin:5px;">
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://keralatourpackagesguide.com/wp-content/uploads/2017/09/bekal-fort-images-sea-facing-768x430.jpg" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Bekal</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 600km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://th.bing.com/th/id/R.7289865853d2c35a6571c71d22be26ba?rik=bedBzCYqnQ%2fVhA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-_2mRSxnXSy0%2fVHjOe1IoDvI%2fAAAAAAAAC80%2faLKkrbQZIpI%2fs1600%2fKUMARAKOM1.jpg&ehk=IfnpHIdwrPUpysmkmjhOItlsfuouM%2fjuMdaS4i99ybg%3d&risl=&pid=ImgRaw&r=0" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Kottayam</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 720km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://kerala.me/wp-content/uploads/2016/04/cache/IbzVqV3-1-full-thumbx2333.jpg" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Ernakulam</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 665km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://www.keralarealestate.com/image/lg/property/property/2017/12/29/125630257/images/1043756783.JPG" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Nedumbasserry</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 630km away</p>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse row  flex-nowrap overflow-auto text-center py-5 my-5"id="val"style="margin:5px;">
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://th.bing.com/th/id/R.8f44531a4b1d794ab3064128ae528dd7?rik=7qwfo1VFBIsVJQ&riu=http%3a%2f%2fimage3.mouthshut.com%2fimages%2fimagesp%2f925003656s.jpg&ehk=RxxVTWJJZ7JQaZV8jJYQ06PKjSCf34HFJwWltkx43aw%3d&risl=&pid=ImgRaw&r=0" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Yercaud</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 305km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://wallpaperaccess.com/full/2852034.jpg" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Ooty</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 540km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://th.bing.com/th/id/R.fa165b71878c25fa60d31b5da4482237?rik=CaIofrQrvF3Drw&riu=http%3a%2f%2fwww.goingindiaa.com%2fwp-content%2fuploads%2f2019%2f04%2fkodaikanal.jpg&ehk=CaTa8GAaVCwuL2SqOAeoVB9tLI1KzZrKU3Qb%2bGMnYZY%3d&risl=&pid=ImgRaw&r=0" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Kodaikanal</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 590km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://wallpapercave.com/wp/wp6733701.jpg" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Munnar</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 600km away</p>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse row text-center flex-nowrap overflow-auto "id="udupi">
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://th.bing.com/th/id/OIP.HeweD-fiII37M0_a0chyTgHaDm?pid=ImgDet&rs=1" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Pondicherry</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 250km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://www.chardhambooking.com/wp-content/uploads/2021/01/rameshwaram.jpg" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Rameshwaram</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 620km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://th.bing.com/th/id/OIP.Wy9_l1QZbV3eynK-0bS-IAHaFj?pid=ImgDet&rs=1" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Mangalore</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 610km away</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-5">
+<div class="card-shadow h-100">
+<img src="https://th.bing.com/th/id/R.8e7b94a8a0a96013151e747ce2fa03b7?rik=G%2bJTPhXmHWHb0w&riu=http%3a%2f%2fs3.amazonaws.com%2fthemorning-aruna%2fwp-content%2fuploads%2f2020%2f09%2f11203056%2fAvaniHeroShot.jpeg&ehk=RpH0uh7k44CJUj3IXGVIra39rfe80IOCUda0pERhT3c%3d&risl=&pid=ImgRaw&r=0" width="400px"height="200px"/>
+<div class="card-text">
+<p class="lead"style="font-family: 'Dekko';">Udupi</p>
+<p class="lead"style="font-family: 'Dekko';">Most famous place in india it one of the best place nearly 650km away</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid my-5 py-5">
+<p class="lead"style="font-size:30px;font-weight:600;">Explore in india</p>
+<p class="lead">These popular destinations have a lot to do offer</p>
+<div class="flex">
+<div class="row d-flex justify-content around d-flex overflow-auto flex-nowrap">
+<div class="col-12 col-md-4">
+<img src="https://1.bp.blogspot.com/-eqBQo9TI2MI/UkHJJZilvfI/AAAAAAAAAIA/1Qg0z3CWAb0/s1600/Charminar,_Hyderabad,_Andhra_Pradesh.JPG" width="500px"height="300px"/>
+<div class="card-img-overlay">
+<p style=" font-family: 'Advent Pro';font-size:30px;color:white;">Hyderabad</p>
+</div>
+</div>
+<div class="col-12 col-md-4">
+<img src="https://www.travelandleisureindia.in/wp-content/uploads/2019/07/Feature-Image-Mumbai.jpg" width="500px"height="300px"/>
+<div class="card-img-overlay">
+<p style=" font-family: 'Advent Pro';font-size:30px;color:white;">Mumbai</p>
+</div>
+</div>
+<div class="col-12 col-md-4">
+<img src="https://d368ufu7xgcs86.cloudfront.net/23209-1580052994.jpg" width="500px"height="300px"/>
+<div class="card-img-overlay">
+<p style=" font-family: 'Advent Pro';font-size:30px;color:white;">kurnool</p>
+</div>
+</div>
+</div>
+</div>
+</br>
+<div class="container-fluid my-5">
+<div class="row justify-content-around d-flex flex-nowrap overflow-auto">
+<div class="col-12 col-md-4">
+<img src="https://static.toiimg.com/photo/61654555/.jpg" width="500px"height="300px"/>
+<div class="card-img-overlay">
+<p style=" font-family: 'Advent Pro';font-size:30px;color:white;">    New Delhi</p>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<img src="https://fsa.zobj.net/crop.php?r=A-wQ9FISfr8AfqoimrTEi0XKsyPn2ZzjMMOuVPfxc0adT9pbmhVrOWyti9hK9T8JCD_928eGah8RqwC86y1ahA8rA8XhakDO3d-kC0pfGdun2cV8hEhj1q-NVVOz43r8gU2Nl5FTglfpT2Vy" width="500px"height="300px"/>
+<div class="card-img-overlay">
+<p style=" font-family: 'Advent Pro';font-size:30px;color:white;">Goa</p>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<img src="https://th.bing.com/th/id/R.dab9e1ba6929d8db1733b0be67aaaa52?rik=92DEDsbrtGk9bQ&riu=http%3a%2f%2fwww.zastavki.com%2fpictures%2foriginals%2f2014%2fWorld___India_Beautiful_architecture_in_Bangalore_068627_.jpg&ehk=B9YFL6VEQps4d4nhjezSRSvPbuU2E1H12XCEATZ%2bZRI%3d&risl=&pid=ImgRaw&r=0" width="500px"height="300px"/>
+<div class="card-img-overlay">
+<p style=" font-family: 'Advent Pro';font-size:30px;color:white;">Banglore</p>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<img src="https://static2.tripoto.com/media/transfer/img/OgData/1511856965_ravi_shekhar_365763_fotor.jpg" width="500px"height="300px"/>
+<div class="card-img-overlay">
+<p style=" font-family: 'Advent Pro';font-size:30px;color:white;">Jaipur</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container3">
+<p class="lead">Save time and Save money!</p>
+<p class="text-light">Sign up and we'll send the best deals to you</p>
+<p class="lead"><input type="text"value="Enter the email address">     <button class="btn btn-primary btn-sm text-light">subscribe</button></p>
+</div>
+<footer >
+<div class="row">
+<div class="col-3">
+ <a href="#">countries</a></br>
+ <a href="#">Regions</a></br>
+  <a href="#">Cities</a></br>
+   <a href="#">Districts</a></br>
+    <a href="#">Airports</a>
+</div >
+<div class="col-3">
+<a href="#">Homes</a></br>
+ <a href="#">Appartments</a></br>
+  <a href="#">Villas</a></br>
+   <a href="#">Resorts</a></br>
+    <a href="#">Hotels</a>
+</div >
+<div class="col-3">
+<a href="#">Discovers</a></br>
+ <a href="#">Reviews</a></br>
+  <a href="#">Discover monthly stays</a></br>
+   <a href="#">Travel communities</a></br>
+    <a href="#">Travel review awards</a>
+</div >
+<div class="col-3">
+<a href="#">Sustainability</a></br>
+ <a href="#">Terms and Conditions</a></br>
+  <a href="#">Service help</a></br>
+   <a href="#">Corporate Cotact</a></br>
+    <a href="#">Patner help</a>
+</div >
+</div>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+<p class="lead">Copyright © 2022-2023 Hotel.com. All rights reserved.
+<br/>
+
+</footer>
+</body>
+</html>
